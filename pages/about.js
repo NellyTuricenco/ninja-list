@@ -1,20 +1,15 @@
-import Link from "next/link";
 import Head from "next/head";
-import Image from "next/image";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import styles from "../styles/Home.module.css";
 
-export default function Home() {
+const About = () => {
   return (
     <>
       <Head>
-        <title>Ninja List | Home</title>
+        <title>Ninja List | About</title>
         <meta name="keywords" content="ninjas"></meta>
       </Head>
       <div>
-        <h1 className={styles.title}>Homepage</h1>
-        <p className={styles.text}>
+        <h1>About</h1>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aut
           debitis sequi vitae alias cum dolor obcaecati, ratione nostrum
           repellendus numquam distinctio rerum, harum iste vero dolorem quia ad
@@ -32,7 +27,7 @@ export default function Home() {
           alias expedita ad perspiciatis, ea placeat veritatis. Quo facilis ex,
           iste et nobis iusto.
         </p>
-        <p className={styles.text}>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aut
           debitis sequi vitae alias cum dolor obcaecati, ratione nostrum
           repellendus numquam distinctio rerum, harum iste vero dolorem quia ad
@@ -50,10 +45,9 @@ export default function Home() {
           alias expedita ad perspiciatis, ea placeat veritatis. Quo facilis ex,
           iste et nobis iusto.
         </p>
-        <Link href="/jedis">
-          <a className={styles.btn}>See ninjas listing</a>
-        </Link>
       </div>
     </>
   );
-}
+};
+
+export default About;
